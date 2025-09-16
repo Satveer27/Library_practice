@@ -1,0 +1,142 @@
+*{
+    background-color: #222222;
+}
+
+.main{
+    text-align: center;
+    align-items: center;
+}   
+
+h1{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f2f2f2;
+    
+}
+
+.add-book{
+    margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+}
+
+.add-book:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.add-book:active {
+  transform: scale(0.95);
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6); /* dark background */
+  justify-content: center;
+  align-items: center;
+}
+
+.popup{
+    background-color: #f2f2f2;
+    padding: 20px 0px;
+    border-radius: 10px;
+    width: 300px;
+    height: auto;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.popup form{
+    background-color: #f2f2f2;
+}
+
+.popup form h2, input, p, button{
+    background-color: #f2f2f2;
+}
+
+.popup form h2{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.popup form input{
+    width: 80%;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.popup form p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.popup form button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    height: 40px;
+    width:  150px;
+}
+
+.library-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+  gap: 16px; 
+  padding: 16px;
+}
+
+.library-box {
+  background: #f2f2f2;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.library-box h3{
+  background: #f2f2f2;
+}
+
+.library-box .delete{
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    background: red;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 20px;
+    background: #e62222;
+    margin-top: 10px;
+}
+
+.library-box .readOption{
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+}
